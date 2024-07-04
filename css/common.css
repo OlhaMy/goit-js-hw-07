@@ -12,3 +12,18 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+/* Task - 2 */
+.gallery {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+.galleryListItem img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* endRegion task 2 */
