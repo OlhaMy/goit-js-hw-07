@@ -24,3 +24,12 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+const imagesElement = images.map(url =>{
+  const imagesEl = document.createElement('img');
+  console.log("🚀 ~ imagesElement ~ imagesEl:", imagesEl)
+  imagesEl.setAttribute(`src` `url`);
+  imagesEl.setAttribute(`alt`);
+  return imagesEl;
+})
+
