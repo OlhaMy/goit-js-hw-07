@@ -6,6 +6,18 @@ boxes: document.querySelector('#boxes'),
 }
 
 
+refs.btnCreate.addEventListener('click', createBoxes);
+refs.btnDestroy.addEventListener('click',destroyBoxes);
+
+
+
+
+
+function destroyBoxes() {
+  refs.boxes.innerHTML = '';
+}
+
+
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
