@@ -9,6 +9,7 @@ refs.btnCreate.addEventListener("click", () => {
   const amount = parseInt(refs.input.value);
   if (!isNaN(amount) && amount >= 1 && amount <= 100) {
     createBoxes(amount);
+    refs.input.value = "";
   } else {
     alert("Please enter a valid number between 1 and 100");
   }
@@ -17,6 +18,7 @@ refs.btnCreate.addEventListener("click", () => {
 refs.btnDestroy.addEventListener("click", destroyBoxes);
 
 function createBoxes(amount) {
+  destroyBoxes();
   const boxesFragment = document.createDocumentFragment();
   const boxSize = 30;
   const incrementSize = 10;
